@@ -1,0 +1,83 @@
+.contact_con {
+  /* display: flex;
+  justify-content: center;
+  align-items: flex-start; */
+  /* gap: 10px; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 30px 90px;
+}
+.company_info {
+  font-size: 18px;
+  /* border: 2px solid peru; */
+}
+.company_info h2 {
+  font-family: "TiemposText", Sans-serif;
+  margin-bottom: 15px;
+  font-size: 3rem;
+  line-height: 45px;
+  letter-spacing: normal;
+}
+
+.company_info p {
+  font-size: 18px;
+  line-height: 25px;
+}
+.company_info label {
+  margin-left: 10px;
+  line-height: 25px;
+}
+
+.company_form input {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.04);
+  border: none;
+  box-sizing: border-box;
+  padding: 10px 15px;
+  margin: 8px 0;
+  border-radius: 30px;
+}
+
+#message_input {
+  height: 160px;
+}
+
+.send_btn {
+  padding: 10px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  background-color: rgb(72, 72, 77);
+  color: white;
+  font-size: 16px;
+}
+
+.send_btn:hover {
+  background-color: white;
+  cursor: pointer;
+  border: 2px solid rgb(72, 72, 77);
+  color: rgb(72, 72, 77);
+}
+
+@media only screen and (max-width: 768px) {
+  .contact_con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px 20px;
+  }
+
+  .company_info {
+    margin-bottom: 30px;
+  }
+
+  .company_form {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 660px) and (max-width: 1218px) {
+  .contact_con {
+    margin: 30px 22px;
+  }
+}

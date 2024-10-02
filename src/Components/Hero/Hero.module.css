@@ -1,0 +1,56 @@
+.hero {
+  background-image: url(../../../public/others/hero_2.jpg);
+  background-position: center;
+  height: 500px;
+  width: 100%;
+  background-position: bottom 49% right 0%;
+  background-size: cover;
+  padding: 0 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.hero button {
+  background-color: rgba(0, 0, 0, 0.918);
+  padding: 15px 20px;
+  font-size: 16px;
+  color: #ffffff;
+  border: 0;
+  border-radius: 10px;
+}
+.hero button.first {
+  font-size: 32px;
+}
+.hero button.second {
+  font-size: 23px;
+  margin-top: 15px;
+}
+
+@media only screen and (max-width: 980px) {
+  .hero {
+    height: 300px;
+  }
+
+  .hero button.first {
+    margin-top: 15px;
+  }
+
+  .hero button.second {
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .hero {
+    height: auto;
+  }
+
+  .hero button.first {
+    margin-top: 15px;
+  }
+
+  .hero button.second {
+    margin-bottom: 15px;
+  }
+}
